@@ -2,7 +2,7 @@ package org.openmrs;
 
 public class Test4 {
 	
-	public void test(String[] args) {
+	public String test(String[] args) {
 		
 		Person person = new Person(8);
 		
@@ -11,6 +11,8 @@ public class Test4 {
 		person.setPersonId(Integer.parseInt(args[3]));
 		
 		System.out.println(person.getPersonId());
+		
+		return person.getPersonId().toString();
 	}
 	
 	public static void main(String[] args) {

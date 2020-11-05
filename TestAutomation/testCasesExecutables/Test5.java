@@ -2,7 +2,7 @@ package org.openmrs;
 
 public class Test5 {
 	
-	public void test(String[] args) {
+	public String test(String[] args) {
 		
 		Person person = new Person(1);
 		
@@ -11,6 +11,8 @@ public class Test5 {
 		User user = new User(person);
 		
 		System.out.println(user.getPerson().getGender());
+		
+		return user.getPerson().getGender();
 		
 	}
 	
