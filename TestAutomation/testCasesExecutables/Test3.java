@@ -1,21 +1,12 @@
 package org.openmrs;
 
+import org.openmrs.util.NaturalStrings;
+
 public class Test3 {
 	
-	public String test(String[] args) {
-		
-		Person person = new Person(Integer.parseInt(args[2]));
-		
-		System.out.println(person.getPersonId());
-		
-		return person.getPersonId().toString();
-	}
-	
 	public static void main(String[] args) {
+		NaturalStrings string1 = new NaturalStrings();
 		
-		Person person = new Person(Integer.parseInt(args[0]));
-		
-		System.out.println(person.getPersonId());
+		System.out.println(string1.compareNaturalIgnoreCaseAscii("ABC", "abc"));
 	}
-	
 }
