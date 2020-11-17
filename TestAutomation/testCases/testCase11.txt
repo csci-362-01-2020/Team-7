@@ -1,0 +1,6 @@
+11
+Test inputs a role and confirms if the role makes the user a superuser
+User.java
+IsSuperUser()
+“System Developer”
+True

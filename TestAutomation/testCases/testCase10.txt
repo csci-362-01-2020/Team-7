@@ -1,0 +1,6 @@
+10
+Test inputs a role and confirms the role was added
+User.Java
+hasRole(String r)
+“CEO”
+True

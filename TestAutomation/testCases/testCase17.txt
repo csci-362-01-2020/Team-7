@@ -1,0 +1,6 @@
+17
+Tests if the method supportsPropertyName returns false when a designated property name is not entered
+LocaleUtility.java
+supportsPropertyName(String propertyName)
+“hello”
+False

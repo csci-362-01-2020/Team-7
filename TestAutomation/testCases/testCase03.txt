@@ -1,0 +1,6 @@
+03
+Tests the method compareNaturalIgnoreCaseAscii when the value for s is equal to the value for t
+NaturalStrings.java
+compareNaturalIgnoreCaseAscii(String s, String t)
+“ABC” “abc”
+0

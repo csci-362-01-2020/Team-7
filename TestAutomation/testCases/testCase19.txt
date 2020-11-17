@@ -1,0 +1,6 @@
+19
+Tests if a Providers Name and Id can be sent to a String
+Provider.java
+toString()
+Provider(1)
+1

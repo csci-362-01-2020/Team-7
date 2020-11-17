@@ -1,0 +1,6 @@
+01
+Test the method compareNatureAscii when the value for s is greaterthan the value for t
+NaturalStrings.java
+compareNaturalAscii(String s, String t)
+"adc" "abc"
+2
