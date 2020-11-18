@@ -8,7 +8,8 @@ public class Test24 {
 		
 		Format string1 = new Format();
 		
-		System.out.println(string1.formatPercentage(.98));
-		
+		//System.out.println(string1.formatPercentage(.98));
+		System.out.println(string1.formatPercentage(Double.parseDouble(args[0])));
+
 	}
 }

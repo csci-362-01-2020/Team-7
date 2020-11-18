@@ -32,6 +32,7 @@ public class Test14 {
 		Allergy allergy2 = new Allergy();
 		
 		AllergenType allergenType = AllergenType.valueOf(args[0]);
+		//AllergenType allergenType = AllergenType.DRUG;
 		
 		Concept concept = new Concept();
 		Allergen allergen = new Allergen(allergenType, concept, null);

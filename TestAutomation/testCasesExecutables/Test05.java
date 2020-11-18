@@ -9,32 +9,32 @@
  */
 package org.openmrs;
 
-public class Test10 {
+public class Test05 {
 	
 	public String test(String[] args) {
 		
-		User user1 = new User(6);
+		Person person = new Person(1);
 		
-		System.out.println(user1.getUserId());
+		person.setGender(args[4]);
 		
-		user1.setUserId(Integer.parseInt(args[0]));
+		User user = new User(person);
 		
-		System.out.println(user1.getUserId());
+		System.out.println(user.getPerson().getGender());
 		
-		return user1.getUserId().toString();
+		return user.getPerson().getGender();
 		
 	}
 	
 	public static void main(String[] args) {
-		User user1 = new User();
 		
-		Role role = new Role(args[0]);
-		//Role role = new Role("CEO");
+		Person person = new Person(1);
 		
-		user1.addRole(role);
+		person.setGender(args[0]);
+		//person.setGender("Male");
 		
-		System.out.println(user1.hasRole(args[0]));
-		//System.out.println(user1.hasRole("CEO"));
+		User user = new User(person);
+		
+		System.out.println(user.getPerson().getGender());
 		
 	}
 }

@@ -22,11 +22,14 @@ public class Test13 {
 	
 	public static void main(String[] args) {
 		
-		Person person = new Person();
-		PersonAddress personAddress = new PersonAddress(1);
-		personAddress.setAddress1(args[0]);
-		person.addAddress(personAddress);
-		System.out.println(person.getAddresses());
+//		Person person = new Person();
+//		PersonAddress personAddress = new PersonAddress(1);
+//		personAddress.setAddress1(args[0]);
+//		//personAddress.setAddress1("930 North Morrison Dr.");
+//		person.addAddress(personAddress);
+//		System.out.println(person.getAddresses());
+		
+		System.out.println("Test 13 currently under maintenance");
 	}
 	
 }

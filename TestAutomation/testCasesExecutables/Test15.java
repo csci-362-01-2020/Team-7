@@ -23,6 +23,9 @@ public class Test15 {
 		AllergenType allergenType = AllergenType.valueOf(args[0]);
 		AllergenType allergenType2 = AllergenType.valueOf(args[1]);
 		
+//		AllergenType allergenType = AllergenType.DRUG;
+//		AllergenType allergenType2 = AllergenType.FOOD;
+		
 		Allergen allergen = new Allergen(allergenType, null, null);
 		Allergen allergen2 = new Allergen(allergenType2, null, null);
 		

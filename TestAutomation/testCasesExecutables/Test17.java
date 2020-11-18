@@ -7,7 +7,8 @@ public class Test17 {
 	public static void main(String[] args) {
 		LocaleUtility string1 = new LocaleUtility();
 		
-		System.out.println(string1.supportsPropertyName("hello"));
+		//System.out.println(string1.supportsPropertyName("hello"));
+		System.out.println(string1.supportsPropertyName(args[0]));
 		
 	}
 }

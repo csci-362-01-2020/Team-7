@@ -6,6 +6,7 @@ public class Test16 {
 		User user1 = new User();
 		
 		Role role = new Role(args[0]);
+		//Role role = new Role("Intern");
 		Role role2 = new Role("Part-Timer");
 		Role role3 = new Role("Graphic Designer");
 		

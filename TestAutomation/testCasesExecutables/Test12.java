@@ -6,6 +6,7 @@ public class Test12 {
 		User user1 = new User();
 		
 		Role role = new Role(args[0]);
+		//Role role = new Role("Graphic Designer");
 		
 		user1.addRole(role);
 		

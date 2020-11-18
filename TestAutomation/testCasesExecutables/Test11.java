@@ -22,6 +22,7 @@ public class Test11 {
 		User user1 = new User();
 		
 		Role role = new Role(args[0]);
+		//Role role = new Role("System Developer");
 		
 		user1.addRole(role);
 		
