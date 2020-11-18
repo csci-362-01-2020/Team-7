@@ -3,4 +3,4 @@ Tests if a Providers Name and Id can be sent to a String
 Provider.java
 toString()
 1
-1
+[Provider: providerId:1 providerName: ]

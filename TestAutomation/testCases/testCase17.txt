@@ -3,4 +3,4 @@ Tests if the method supportsPropertyName returns false when a designated propert
 LocaleUtility.java
 supportsPropertyName(String propertyName)
 “hello”
-False
+false

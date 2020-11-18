@@ -3,4 +3,4 @@ Test inputs two allergens and sees if they’re the same
 Allergy.java
 hasSameAllergen(Allergy allergy)
 DRUG FOOD
-False
+false

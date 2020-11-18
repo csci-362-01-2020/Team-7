@@ -2,5 +2,5 @@
 Tests the method compareNaturalAscii when the value for t is greater than the value for s
 NaturalStrings.java
 compareNaturalAscii(String s, String t)
-“adc” “abc”
+“abc” “adc”
 -2
