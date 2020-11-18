@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd ../../api/target/classes/org/openmrs
+rm ~/Desktop/TestAutomation/oracles/results.txt
+
+cd ../../openmrs-core/api/target/classes/org/openmrs
 
 count=1
 
@@ -25,23 +27,56 @@ for file in *
 		test="Test"$count
 	fi
 	
-	#echo "Is $name = to $test"
 	if [ $name = $test ]; then
-	
-		# Insert portion to travel to the test case information files
-		# and read in the needed arguments to run the current test case
-		# Currently, all arguments are hardcoded.
-		# Other parts in this area will be creating the test results html file
 		
-		count=$((count+1))
+		#Current test case
 		echo "$name"
-		#echo "$count"
+		
+		
+		# Find test case info
+		cd ~/Desktop/TestAutomation/testCases
+		
+		if [ $count -lt 10 ]; then
+			file="testCase0"$count".txt"
+		else
+			file="testCase"$count".txt"
+		fi
+
+		echo "$file"
+
+		info=(0 1 2 3 4 5)
+		n=0
+		
+		while read line; do
+
+			#echo "Line info: $line"
+			info[$n]=$line
+			n=$((n+1))
+
+		done < $file
+
+		#echo ${info[4]}
+
+		cd ../../openmrs-core/api/target/classes/org/openmrs
+
+		
+		# Run an iindividual case
+		count=$((count+1))
+
 		cd ..
 		cd ..
-		java org/openmrs/$name
-		#java org/openmrs/Test10
+		
+		java org/openmrs/$name ${info[4]}
+		
+		echo ${info[5]} >> ~/Desktop/TestAutomation/oracles/results.txt
+
+		#echo java org/openmrs/$name ${info[4]} | tee ~/Desktop/TestAutomation/oracles/results.txt
+
 		#cd ~/Desktop/openmrs-core/TestAutomation/oracles Location where we will eventually print the raw test results
+
 		cd org/openmrs
+		
+		echo ""
 	fi
 		
 done
