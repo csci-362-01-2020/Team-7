@@ -2,5 +2,5 @@
 Tests if two Providers are the same
 ProviderByPersonNameComparator.java
 compare(Provider provider1, Provider provider 2)
-Provider(1) Provider(1)
+1 1
 0

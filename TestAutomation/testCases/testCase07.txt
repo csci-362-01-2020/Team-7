@@ -2,5 +2,5 @@
 Tests the compareTo method on how it handles when the first low inputted is less than the second low and the first high value is greater than the second high value
 DoubleRange.java
 CompareTo(DoubleRange other)
-Range1 = low 34.0, high 90.1 Range2 = low 34.0, high 56.0
+34.0 90.1 34.0 56.0
 -1
