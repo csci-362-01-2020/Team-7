@@ -1,10 +1,13 @@
 #!/bin/bash
 
+rm ~/Desktop/TestAutomation/reports/finalReport.html
 rm ~/Desktop/TestAutomation/oracles/results.txt
 
 cd ../../openmrs-core/api/target/classes/org/openmrs
 
 count=1
+
+echo "Test Results:"  >> ~/Desktop/TestAutomation/reports/finalReport.html
 
 for file in *
 	do
@@ -70,13 +73,23 @@ for file in *
 		
 		echo ${info[5]} >> ~/Desktop/TestAutomation/oracles/results.txt
 
-		#echo java org/openmrs/$name ${info[4]} | tee ~/Desktop/TestAutomation/oracles/results.txt
-
-		#cd ~/Desktop/openmrs-core/TestAutomation/oracles Location where we will eventually print the raw test results
-
 		cd org/openmrs
 		
 		echo ""
+		
+		# Create the html report here
+		
+		echo "    Test ID ${info[0]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		echo "        Requirements: ${info[1]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		echo "        Component: ${info[2]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		echo "        Method: ${info[3]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		echo "        Test Input: ${info[4]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		echo "        Expected Outcome: ${info[5]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		echo "    Passed" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		echo "" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		
 	fi
 		
 done
+
+xdg-open >> ~/Desktop/TestAutomation/reports/finalReport.html
