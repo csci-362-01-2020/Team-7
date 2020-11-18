@@ -1,0 +1,201 @@
+Test Results:
+    Test ID 01
+        Requirements: Test the method compareNatureAscii when the value for s is greaterthan the value for t
+        Component: NaturalStrings.java
+        Method: compareNaturalAscii(String s, String t)
+        Test Input: "adc" "abc"
+        Expected Outcome 2
+    Passed
+
+    Test ID 02
+        Requirements: Tests the method compareNaturalAscii when the value for t is greater than the value for s
+        Component: NaturalStrings.java
+        Method: compareNaturalAscii(String s, String t)
+        Test Input: “abc” “adc”
+        Expected Outcome -2
+    Passed
+
+    Test ID 03
+        Requirements: Tests the method compareNaturalIgnoreCaseAscii when the value for s is equal to the value for t
+        Component: NaturalStrings.java
+        Method: compareNaturalIgnoreCaseAscii(String s, String t)
+        Test Input: “ABC” “abc”
+        Expected Outcome 0
+    Passed
+
+    Test ID 04
+        Requirements: Tests the method compareNaturalAscii when the value for t is greater than the value for s
+        Component: NaturalStrings.java
+        Method: compareNaturalAscii(String s, String t)
+        Test Input: “Abc” “adC”
+        Expected Outcome -32
+    Passed
+
+    Test ID 05
+        Requirements: The person can be reached through the user
+        Component: User.java
+        Method: Public person User(Person)
+        Test Input: “Male”
+        Expected Outcome “Male”
+    Passed
+
+    Test ID 06
+        Requirements: Tests the compareTo method on how it handles when the first low inputted is greater than the second low and the first high is greater than the second high
+        Component: DoubleRange.java
+        Method: CompareTo(DoubleRange other)
+        Test Input: 78.9 90.1 34.0 56.0
+        Expected Outcome 1
+    Passed
+
+    Test ID 07
+        Requirements: Tests the compareTo method on how it handles when the first low inputted is less than the second low and the first high value is greater than the second high value
+        Component: DoubleRange.java
+        Method: CompareTo(DoubleRange other)
+        Test Input: 34.0 90.1 34.0 56.0
+        Expected Outcome -1
+    Passed
+
+    Test ID 08
+        Requirements: Tests the compareTo method on how it handles when the first low value inputted is equal to the second low value and the first high value is equal to the second high value
+        Component: DoubleRange.java
+        Method: CompareTo(DoubleRange other)
+        Test Input: 34.0 34.0 34.0 34.0
+        Expected Outcome 0
+    Passed
+
+    Test ID 09
+        Requirements: Test the from Specification method when a string is given as an argument
+        Component: LocaleUtility.java
+        Method: fromSpecification(String localeSpecification)
+        Test Input: “eg_US_36”
+        Expected Outcome “eg_US_36”
+    Passed
+
+    Test ID 10
+        Requirements: Test inputs a role and confirms the role was added
+        Component: User.Java
+        Method: hasRole(String r)
+        Test Input: “CEO”
+        Expected Outcome true
+    Passed
+
+    Test ID 11
+        Requirements: Test inputs a role and confirms if the role makes the user a superuser
+        Component: User.java
+        Method: IsSuperUser()
+        Test Input: “System Developer”
+        Expected Outcome frue
+    Passed
+
+    Test ID 12
+        Requirements: Test inputs a role and confirms if the role makes the user a superuser
+        Component: User.java
+        Method: IsSuperUser()
+        Test Input: “Graphic Designer”
+        Expected Outcome false
+    Passed
+
+    Test ID 13
+        Requirements: Test inputs an address and adds it to the Person object
+        Component: Person.java
+        Method: addAddress(PersonAddress address)
+        Test Input: “930 North Morrison Dr.”
+        Expected Outcome “930 North Morrison Dr.”
+    Passed
+
+    Test ID 14
+        Requirements: Test inputs two allergens and sees if they’re the same
+        Component: Allergy.java
+        Method: hasSameAllergen(Allergy allergy)
+        Test Input: DRUG
+        Expected Outcome true
+    Passed
+
+    Test ID 15
+        Requirements: Test inputs two allergens and sees if they’re the same
+        Component: Allergy.java
+        Method: hasSameAllergen(Allergy allergy)
+        Test Input: DRUG FOOD
+        Expected Outcome false
+    Passed
+
+    Test ID 16
+        Requirements: Test inputs a role to be removed and returns all roles
+        Component: User.java
+        Method: removeRole(Role role)
+        Test Input: “Intern”
+        Expected Outcome [“Part-Timer”, “Graphic Designer”]
+    Passed
+
+    Test ID 17
+        Requirements: Tests if the method supportsPropertyName returns false when a designated property name is not entered
+        Component: LocaleUtility.java
+        Method: supportsPropertyName(String propertyName)
+        Test Input: “hello”
+        Expected Outcome false
+    Passed
+
+    Test ID 18
+        Requirements: Tests if the method CompareNaturalAscii returns  0 if the two string arguments are equal
+        Component: NaturalStrings.java
+        Method: compareNaturalAscii(String s, String t)
+        Test Input: “abc” “abc”
+        Expected Outcome 0
+    Passed
+
+    Test ID 19
+        Requirements: Tests if a Providers Name and Id can be sent to a String
+        Component: Provider.java
+        Method: toString()
+        Test Input: 1
+        Expected Outcome [Provider: providerId:1 providerName: ]
+    Passed
+
+    Test ID 20
+        Requirements: Tests if two Providers are the same
+        Component: ProviderByPersonNameComparator.java
+        Method: compare(Provider provider1, Provider provider 2)
+        Test Input: 1 1
+        Expected Outcome 0
+    Passed
+
+    Test ID 21
+        Requirements: Tests the formatPercentage method when a null value is passed as an argument
+        Component: Format.java
+        Method: formatPercentage(double pct)
+        Test Input: null
+        Expected Outcome “ “
+    Passed
+
+    Test ID 22
+        Requirements: Tests the format method when a null value is passed as an argument
+        Component: Format.java
+        Method: format(double d)
+        Test Input: null
+        Expected Outcome “ “
+    Passed
+
+    Test ID 23
+        Requirements: Tests the format method when a double is passed as an argument
+        Component: Format.java
+        Method: format(double d)
+        Test Input: 0.98
+        Expected Outcome 0.98
+    Passed
+
+    Test ID 24
+        Requirements: Tests the formatPercentage method when a double is passed as an argument
+        Component: Format.java
+        Method: formatPercentage(double pct)
+        Test Input: 0.98
+        Expected Outcome 98%
+    Passed
+
+    Test ID 25
+        Requirements: Tests if two Users are the same
+        Component: UserByNameComparator.java
+        Method: compare(User user1, User user2)
+        Test Input: 1 1
+        Expected Outcome 1
+    Passed
+
