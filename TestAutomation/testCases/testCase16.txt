@@ -3,4 +3,4 @@ Test inputs a role to be removed and returns all roles
 User.java
 removeRole(Role role)
 “Intern”
-[“Part-Timer”, “Graphic Designer”]
+[Part-Timer, Graphic Designer]
