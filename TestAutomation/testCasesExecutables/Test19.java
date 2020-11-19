@@ -1,15 +1,14 @@
 package org.openmrs;
 
-import org.openmrs.Person;
-import org.openmrs.User;
-import org.openmrs.Provider;
+import org.openmrs.util.DoubleRange;
 
 public class Test19 {
 	
 	public static void main(String[] args) {
-		//Provider n = new Provider(1);
-		Provider n = new Provider(Integer.parseInt(args[0]));
 		
-		System.out.println(n.toString());
+		DoubleRange range1 = new DoubleRange(10.0, 90.9);
+		
+		//System.out.println(range1.contains(0.0));
+		System.out.println(range1.contains(Double.parseDouble(args[0])));
 	}
 }

@@ -9,27 +9,15 @@
  */
 package org.openmrs;
 
+import org.openmrs.util.DoubleRange;
+
 public class Test13 {
-	
-	public String test(String[] args) {
-		
-		Person person = new Person(Integer.parseInt(args[2]));
-		
-		System.out.println(person.getPersonId());
-		
-		return person.getPersonId().toString();
-	}
 	
 	public static void main(String[] args) {
 		
-//		Person person = new Person();
-//		PersonAddress personAddress = new PersonAddress(1);
-//		personAddress.setAddress1(args[0]);
-//		//personAddress.setAddress1("930 North Morrison Dr.");
-//		person.addAddress(personAddress);
-//		System.out.println(person.getAddresses());
+		DoubleRange range1 = new DoubleRange(10.0, 90.9);
 		
-		System.out.println("Test 13 currently under maintenance");
+		//System.out.println(range1.contains(20.9));
+		System.out.println(range1.contains(Double.parseDouble(args[0])));
 	}
-	
 }
