@@ -1,6 +1,6 @@
 16
-Test inputs a role to be removed and returns all roles
-User.java
-removeRole(Role role)
-“Intern”
-[Part-Timer, Graphic Designer]
+Test inputs a double and checks if the given double is the same as the minimum if it is considered inside the range.
+DoubleRange.java
+contains(double d)
+10.0
+true

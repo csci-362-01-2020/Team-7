@@ -1,6 +1,6 @@
 13
-Test inputs an address and adds it to the Person object
-Person.java
-addAddress(PersonAddress address)
-“930 North Morrison Dr.”
-“930 North Morrison Dr.”
+Test inputs a double and checks if the given double is inside the range.
+DoubleRange.java
+contains(double d)
+20.9
+true
