@@ -7,7 +7,7 @@ cd ../../openmrs-core/api/target/classes/org/openmrs
 
 count=1
 
-echo "Test Results:"  >> ~/Desktop/TestAutomation/reports/finalReport.html
+echo "<H1>Test Results:</H1><br>"  >> ~/Desktop/TestAutomation/reports/finalReport.html
 
 for file in *
 	do
@@ -45,8 +45,6 @@ for file in *
 			file="testCase"$count".txt"
 		fi
 
-		echo "$file"
-
 		info=(0 1 2 3 4 5)
 		n=0
 		
@@ -58,8 +56,6 @@ for file in *
 
 		done < $file
 
-		#echo ${info[4]}
-
 		cd ../../openmrs-core/api/target/classes/org/openmrs
 
 		
@@ -69,27 +65,33 @@ for file in *
 		cd ..
 		cd ..
 		
-		java org/openmrs/$name ${info[4]}
+		java org/openmrs/$name ${info[4]} >> ~/Desktop/TestAutomation/oracles/results.txt
 		
-		echo ${info[5]} >> ~/Desktop/TestAutomation/oracles/results.txt
+		out="$(java org/openmrs/$name ${info[4]})"
 
 		cd org/openmrs
 		
 		echo ""
 		
-		# Create the html report here
+		report=~/Desktop/TestAutomation/reports/finalReport.html
 		
-		echo "    Test ID ${info[0]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
-		echo "        Requirements: ${info[1]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
-		echo "        Component: ${info[2]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
-		echo "        Method: ${info[3]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
-		echo "        Test Input: ${info[4]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
-		echo "        Expected Outcome: ${info[5]}" >> ~/Desktop/TestAutomation/reports/finalReport.html
-		echo "    Passed" >> ~/Desktop/TestAutomation/reports/finalReport.html
-		echo "" >> ~/Desktop/TestAutomation/reports/finalReport.html
+		# HTML code for reporting the tests
+		echo "<BLOCKQUOTE><B><U>Test ID ${info[0]}</U></B><br>" >> $report
+		echo "<UL><LI>Requirements: ${info[1]}" >> $report
+		echo "<LI>Component: ${info[2]}" >> $report
+		echo "<LI>Method: ${info[3]}" >> $report
+		echo "<LI>Test Input: ${info[4]}" >> $report
+		echo "<LI>Expected Outcome: ${info[5]}" >> $report
+		echo "<LI>Actual Outcome: $out</UL>" >> $report
+		
+		if [ $out = ${info[5]} ]; then
+			echo "Passed</BLOCKQUOTE><br><br>" >> $report
+		else
+			echo "Failed</BLOCKQUOTE><br><br>" >> $report
+		fi
 		
 	fi
 		
 done
 
-xdg-open >> ~/Desktop/TestAutomation/reports/finalReport.html
+xdg-open $report
