@@ -1,13 +1,13 @@
 #!/bin/bash
 
-rm ~/Desktop/TestAutomation/reports/finalReport.html
-rm ~/Desktop/TestAutomation/oracles/results.txt
+rm ../reports/finalReport.html
+rm ../oracles/results.txt
 
 cd ../../openmrs-core/api/target/classes/org/openmrs
 
 count=1
 
-echo "<H1>Test Results:</H1><br>"  >> ~/Desktop/TestAutomation/reports/finalReport.html
+echo "<H1>Test Results:</H1><br>"  >> ../../../../../../TestAutomation/reports/finalReport.html
 
 for file in *
 	do
@@ -37,7 +37,7 @@ for file in *
 		
 		
 		# Find test case info
-		cd ~/Desktop/TestAutomation/testCases
+		cd ../../../../../../TestAutomation/testCases
 		
 		if [ $count -lt 10 ]; then
 			file="testCase0"$count".txt"
@@ -59,13 +59,13 @@ for file in *
 		cd ../../openmrs-core/api/target/classes/org/openmrs
 
 		
-		# Run an iindividual case
+		# Run an individual case
 		count=$((count+1))
 
 		cd ..
 		cd ..
 		
-		java org/openmrs/$name ${info[4]} >> ~/Desktop/TestAutomation/oracles/results.txt
+		java org/openmrs/$name ${info[4]} >> ../../../../TestAutomation/oracles/results.txt
 		
 		out="$(java org/openmrs/$name ${info[4]})"
 
@@ -73,7 +73,7 @@ for file in *
 		
 		echo ""
 		
-		report=~/Desktop/TestAutomation/reports/finalReport.html
+		report=../../../../../../TestAutomation/reports/finalReport.html
 		
 		# HTML code for reporting the tests
 		echo "<BLOCKQUOTE><B><U>Test ID ${info[0]}</U></B><br>" >> $report
