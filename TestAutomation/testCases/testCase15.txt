@@ -1,6 +1,7 @@
 15
 Test inputs two allergens and sees if they’re the same
 Allergy.java
+Test15
 hasSameAllergen(Allergy allergy)
 DRUG FOOD
 false

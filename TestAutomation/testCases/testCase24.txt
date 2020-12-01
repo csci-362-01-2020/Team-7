@@ -1,6 +1,7 @@
 24
 Tests the formatPercentage method when a double is passed as an argument
 Format.java
+Test24
 formatPercentage(double pct)
 0.98
 98%

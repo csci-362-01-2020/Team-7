@@ -1,6 +1,7 @@
 02 
 Tests the method compareNaturalAscii when the value for t is greater than the value for s
 NaturalStrings.java
+Test02
 compareNaturalAscii(String s, String t)
 “abc” “adc”
 -2

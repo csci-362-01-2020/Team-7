@@ -1,6 +1,7 @@
 11
-Test inputs a role and confirms if the role makes the user a superuser
+Checks if user is a super user
 User.java
+Test11
 IsSuperUser()
-“System Developer”
-frue
+["System Developer" "hey"]
+true

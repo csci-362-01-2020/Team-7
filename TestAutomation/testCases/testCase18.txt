@@ -1,6 +1,7 @@
 18
 Tests if the method CompareNaturalAscii returns  0 if the two string arguments are equal
 NaturalStrings.java
+Test18
 compareNaturalAscii(String s, String t)
 “abc” “abc”
 0

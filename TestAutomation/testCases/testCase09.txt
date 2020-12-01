@@ -1,6 +1,7 @@
 09
 Test the from Specification method when a string is given as an argument
 LocaleUtility.java
+Test09
 fromSpecification(String localeSpecification)
 “eg_US_36”
 “eg_US_36”

@@ -1,6 +1,7 @@
 23
 Tests the format method when a double is passed as an argument
 Format.java
+Test23
 format(double d)
 0.98
 0.98

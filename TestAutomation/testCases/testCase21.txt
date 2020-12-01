@@ -1,6 +1,7 @@
 21
 Tests the formatPercentage method when a null value is passed as an argument
 Format.java
+Test21
 formatPercentage(double pct)
 null
 

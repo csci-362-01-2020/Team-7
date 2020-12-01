@@ -1,6 +1,7 @@
 20
 Tests if two Providers are the same
 ProviderByPersonNameComparator.java
+Test20
 compare(Provider provider1, Provider provider 2)
 1 1
 0

@@ -1,6 +1,7 @@
 12
-Test inputs a role and confirms if the role makes the user a superuser
+Checks if user is a super user
 User.java
+Test12
 IsSuperUser()
 “Graphic Designer”
 false

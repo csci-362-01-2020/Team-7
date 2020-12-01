@@ -1,6 +1,7 @@
 14
 Test inputs two allergens and sees if they’re the same
 Allergy.java
+Test14
 hasSameAllergen(Allergy allergy)
 DRUG
 true

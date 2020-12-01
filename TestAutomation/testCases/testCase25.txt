@@ -1,6 +1,7 @@
 25
 Tests if two Users are the same
 UserByNameComparator.java
+Test25
 compare(User user1, User user2)
 1 1
 1
