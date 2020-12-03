@@ -7,7 +7,7 @@ cd ../testCases
 
 count=1
 
-echo "<H1>Test Results:</H1><br>"  >> ../reports/finalReport.html
+echo "<H1>Open MRS Test Results:</H1><br>"  >> ../reports/finalReport.html
 
 for file in *
 	do
