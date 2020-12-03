@@ -10,6 +10,6 @@ public class Test24 {
 		
 		//System.out.println(string1.formatPercentage(.98));
 		System.out.println(string1.formatPercentage(Double.parseDouble(args[0])));
-
+		
 	}
 }
