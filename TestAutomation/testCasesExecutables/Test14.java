@@ -13,19 +13,6 @@ import org.openmrs.api.context.Context;
 
 public class Test14 {
 	
-	public String test(String[] args) {
-		
-		Person person = new Person(8);
-		
-		System.out.println(person.getPersonId());
-		
-		person.setPersonId(Integer.parseInt(args[3]));
-		
-		System.out.println(person.getPersonId());
-		
-		return person.getPersonId().toString();
-	}
-	
 	public static void main(String[] args) {
 		
 		Allergy allergy = new Allergy();

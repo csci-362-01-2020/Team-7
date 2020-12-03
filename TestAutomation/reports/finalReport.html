@@ -1,143 +1,161 @@
-<H1>Test Results:</H1><br>
+<H1>OpenMRS Test Results:</H1><br>
 <BLOCKQUOTE><B><U>Test ID 01</U></B><br>
-<UL><LI>Requirements: Test the method compareNatureAscii when the value for s is greaterthan the value for t
+<UL><LI>Requirements: Subtracts the ASCII values of s and t
 <LI>Component: NaturalStrings.java
+<LI>Driver: Test01
 <LI>Method: compareNaturalAscii(String s, String t)
 <LI>Test Input: "adc" "abc"
 <LI>Expected Outcome: 2
 <LI>Actual Outcome: 2</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 02</U></B><br>
-<UL><LI>Requirements: Tests the method compareNaturalAscii when the value for t is greater than the value for s
+<UL><LI>Requirements: Subtracts the ASCII values of s and t
 <LI>Component: NaturalStrings.java
+<LI>Driver: Test02
 <LI>Method: compareNaturalAscii(String s, String t)
 <LI>Test Input: “abc” “adc”
 <LI>Expected Outcome: -2
 <LI>Actual Outcome: -2</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 03</U></B><br>
-<UL><LI>Requirements: Tests the method compareNaturalIgnoreCaseAscii when the value for s is equal to the value for t
+<UL><LI>Requirements: Subtracts the ASCII values of s and t
 <LI>Component: NaturalStrings.java
+<LI>Driver: Test03
 <LI>Method: compareNaturalIgnoreCaseAscii(String s, String t)
 <LI>Test Input: “ABC” “abc”
 <LI>Expected Outcome: 0
 <LI>Actual Outcome: 0</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 04</U></B><br>
-<UL><LI>Requirements: Tests the method compareNaturalAscii when the value for t is greater than the value for s
+<UL><LI>Requirements: Subtracts the ASCII values of s and t
 <LI>Component: NaturalStrings.java
+<LI>Driver: Test04
 <LI>Method: compareNaturalAscii(String s, String t)
 <LI>Test Input: “Abc” “adC”
 <LI>Expected Outcome: -32
 <LI>Actual Outcome: -32</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 05</U></B><br>
-<UL><LI>Requirements: The person can be reached through the user
+<UL><LI>Requirements: The person assigned to the user can be reached through the user
 <LI>Component: User.java
+<LI>Driver: Test05
 <LI>Method: Public person User(Person)
 <LI>Test Input: “Male”
 <LI>Expected Outcome: “Male”
 <LI>Actual Outcome: “Male”</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 06</U></B><br>
-<UL><LI>Requirements: Tests the compareTo method on how it handles when the first low inputted is greater than the second low and the first high is greater than the second high
+<UL><LI>Requirements: Determines which range is larger
 <LI>Component: DoubleRange.java
+<LI>Driver: Test06
 <LI>Method: CompareTo(DoubleRange other)
 <LI>Test Input: 78.9 90.1 34.0 56.0
 <LI>Expected Outcome: 1
 <LI>Actual Outcome: 1</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 07</U></B><br>
-<UL><LI>Requirements: Tests the compareTo method on how it handles when the first low inputted is less than the second low and the first high value is greater than the second high value
+<UL><LI>Requirements: Determines which range is larger
 <LI>Component: DoubleRange.java
+<LI>Driver: Test07
 <LI>Method: CompareTo(DoubleRange other)
 <LI>Test Input: 34.0 90.1 34.0 56.0
 <LI>Expected Outcome: -1
 <LI>Actual Outcome: -1</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 08</U></B><br>
-<UL><LI>Requirements: Tests the compareTo method on how it handles when the first low value inputted is equal to the second low value and the first high value is equal to the second high value
+<UL><LI>Requirements: Determines which range is larger
 <LI>Component: DoubleRange.java
+<LI>Driver: Test08
 <LI>Method: CompareTo(DoubleRange other)
 <LI>Test Input: 34.0 34.0 34.0 34.0
 <LI>Expected Outcome: 0
 <LI>Actual Outcome: 0</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 09</U></B><br>
-<UL><LI>Requirements: Test the from Specification method when a string is given as an argument
+<UL><LI>Requirements: Creates a locale based on a string specification.
 <LI>Component: LocaleUtility.java
+<LI>Driver: Test09
 <LI>Method: fromSpecification(String localeSpecification)
 <LI>Test Input: “eg_US_36”
 <LI>Expected Outcome: “eg_US_36”
 <LI>Actual Outcome: “eg_US_36”</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 10</U></B><br>
-<UL><LI>Requirements: Test inputs a role and confirms the role was added
+<UL><LI>Requirements: Returns if a user has a role
 <LI>Component: User.Java
+<LI>Driver: Test10
 <LI>Method: hasRole(String r)
 <LI>Test Input: “CEO”
 <LI>Expected Outcome: true
 <LI>Actual Outcome: true</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 11</U></B><br>
-<UL><LI>Requirements: Test inputs a role and confirms if the role makes the user a superuser
+<UL><LI>Requirements: Checks if user is a super user
 <LI>Component: User.java
+<LI>Driver: Test11
 <LI>Method: IsSuperUser()
-<LI>Test Input: “System Developer”
-<LI>Expected Outcome: frue
-<LI>Actual Outcome: false</UL>
-Failed</BLOCKQUOTE><br><br>
+<LI>Test Input: System Developer
+<LI>Expected Outcome: true
+<LI>Actual Outcome: true</UL>
+Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 12</U></B><br>
-<UL><LI>Requirements: Test inputs a role and confirms if the role makes the user a superuser
+<UL><LI>Requirements: Checks if user is a super user
 <LI>Component: User.java
+<LI>Driver: Test12
 <LI>Method: IsSuperUser()
 <LI>Test Input: “Graphic Designer”
 <LI>Expected Outcome: false
 <LI>Actual Outcome: false</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 13</U></B><br>
-<UL><LI>Requirements: Test inputs a double and checks if the given double is inside the range.
+<UL><LI>Requirements: Checks if the float provided is inside the provided range
 <LI>Component: DoubleRange.java
+<LI>Driver: Test13
 <LI>Method: contains(double d)
-<LI>Test Input: 20.9
+<LI>Test Input: 10.0 90.9 20.9
 <LI>Expected Outcome: true
 <LI>Actual Outcome: true</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 14</U></B><br>
-<UL><LI>Requirements: Test inputs two allergens and sees if they’re the same
+<UL><LI>Requirements: Compares the allergens of two allergies
 <LI>Component: Allergy.java
+<LI>Driver: Test14
 <LI>Method: hasSameAllergen(Allergy allergy)
 <LI>Test Input: DRUG
 <LI>Expected Outcome: true
 <LI>Actual Outcome: true</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 15</U></B><br>
-<UL><LI>Requirements: Test inputs two allergens and sees if they’re the same
+<UL><LI>Requirements: Compares the allergens of two allergies
 <LI>Component: Allergy.java
+<LI>Driver: Test15
 <LI>Method: hasSameAllergen(Allergy allergy)
 <LI>Test Input: DRUG FOOD
 <LI>Expected Outcome: false
 <LI>Actual Outcome: false</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 16</U></B><br>
-<UL><LI>Requirements: Test inputs a double and checks if the given double is the same as the minimum if it is considered inside the range.
+<UL><LI>Requirements: Checks if the float provided is inside the provided range
 <LI>Component: DoubleRange.java
+<LI>Driver: Test16
 <LI>Method: contains(double d)
-<LI>Test Input: 10.0
+<LI>Test Input: 10.0 90.9 10.0
 <LI>Expected Outcome: true
 <LI>Actual Outcome: true</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 17</U></B><br>
-<UL><LI>Requirements: Tests if the method supportsPropertyName returns false when a designated property name is not entered
+<UL><LI>Requirements: Checks if the provided string is a propeerty name
 <LI>Component: LocaleUtility.java
+<LI>Driver: Test17
 <LI>Method: supportsPropertyName(String propertyName)
 <LI>Test Input: “hello”
 <LI>Expected Outcome: false
 <LI>Actual Outcome: false</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 18</U></B><br>
-<UL><LI>Requirements: Tests if the method CompareNaturalAscii returns  0 if the two string arguments are equal
+<UL><LI>Requirements: Subtracts the two ASCII values of s and t
 <LI>Component: NaturalStrings.java
+<LI>Driver: Test18
 <LI>Method: compareNaturalAscii(String s, String t)
 <LI>Test Input: “abc” “abc”
 <LI>Expected Outcome: 0
@@ -146,54 +164,61 @@ Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 19</U></B><br>
 <UL><LI>Requirements: Test inputs a double and checks if the given double is in the range.
 <LI>Component: DoubleRange.java
+<LI>Driver: Test19
 <LI>Method: contains(double d)
-<LI>Test Input: 0.0
+<LI>Test Input: 10.0 90.9 0.0
 <LI>Expected Outcome: false
 <LI>Actual Outcome: false</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 20</U></B><br>
 <UL><LI>Requirements: Tests if two Providers are the same
 <LI>Component: ProviderByPersonNameComparator.java
+<LI>Driver: Test20
 <LI>Method: compare(Provider provider1, Provider provider 2)
 <LI>Test Input: 1 1
 <LI>Expected Outcome: 0
 <LI>Actual Outcome: 0</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 21</U></B><br>
-<UL><LI>Requirements: Tests the formatPercentage method when a null value is passed as an argument
+<UL><LI>Requirements: Reformats a double into a percentage
 <LI>Component: Format.java
+<LI>Driver: Test21
 <LI>Method: formatPercentage(double pct)
 <LI>Test Input: null
 <LI>Expected Outcome: 
 <LI>Actual Outcome: </UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 22</U></B><br>
-<UL><LI>Requirements: Tests the format method when a null value is passed as an argument
+<UL><LI>Requirements: Formats a double to have two decimal points
 <LI>Component: Format.java
+<LI>Driver: Test22
 <LI>Method: format(double d)
 <LI>Test Input: null
 <LI>Expected Outcome: 
 <LI>Actual Outcome: </UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 23</U></B><br>
-<UL><LI>Requirements: Tests the format method when a double is passed as an argument
+<UL><LI>Requirements: Formats a double to have two decimal points
 <LI>Component: Format.java
+<LI>Driver: Test23
 <LI>Method: format(double d)
 <LI>Test Input: 0.98
 <LI>Expected Outcome: 0.98
 <LI>Actual Outcome: 0.98</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 24</U></B><br>
-<UL><LI>Requirements: Tests the formatPercentage method when a double is passed as an argument
+<UL><LI>Requirements: Reformats a double to a percentage
 <LI>Component: Format.java
+<LI>Driver: Test24
 <LI>Method: formatPercentage(double pct)
 <LI>Test Input: 0.98
 <LI>Expected Outcome: 98%
 <LI>Actual Outcome: 98%</UL>
 Passed</BLOCKQUOTE><br><br>
 <BLOCKQUOTE><B><U>Test ID 25</U></B><br>
-<UL><LI>Requirements: Tests if two Users are the same
+<UL><LI>Requirements: Compares two users
 <LI>Component: UserByNameComparator.java
+<LI>Driver: Test25
 <LI>Method: compare(User user1, User user2)
 <LI>Test Input: 1 1
 <LI>Expected Outcome: 1

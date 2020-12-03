@@ -11,17 +11,10 @@ package org.openmrs;
 
 public class Test11 {
 	
-	public String test(String[] args) {
-		User user1 = new User(Integer.parseInt(args[1]));
-		
-		System.out.println(user1.getUserId());
-		return user1.getUserId().toString();
-	}
-	
 	public static void main(String[] args) {
 		User user1 = new User();
 		
-		Role role = new Role(args[0]);
+		Role role = new Role(args[0] + " " + args[1]);
 		//Role role = new Role("System Developer");
 		
 		user1.addRole(role);
