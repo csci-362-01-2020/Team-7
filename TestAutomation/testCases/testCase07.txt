@@ -1,5 +1,5 @@
 07
-Tests the compareTo method on how it handles when the first low inputted is less than the second low and the first high value is greater than the second high value
+Determines which range is larger
 DoubleRange.java
 Test07
 CompareTo(DoubleRange other)

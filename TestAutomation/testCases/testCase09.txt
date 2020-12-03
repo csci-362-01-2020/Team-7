@@ -1,5 +1,5 @@
 09
-Test the from Specification method when a string is given as an argument
+Creates a locale based on a string specification.
 LocaleUtility.java
 Test09
 fromSpecification(String localeSpecification)

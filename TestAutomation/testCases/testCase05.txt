@@ -1,5 +1,5 @@
 05
-The person can be reached through the user
+The person assigned to the user can be reached through the user
 User.java
 Test05
 Public person User(Person)

@@ -1,5 +1,5 @@
 17
-Tests if the method supportsPropertyName returns false when a designated property name is not entered
+Checks if the provided string is a propeerty name
 LocaleUtility.java
 Test17
 supportsPropertyName(String propertyName)

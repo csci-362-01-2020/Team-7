@@ -1,5 +1,5 @@
 22
-Tests the format method when a null value is passed as an argument
+Formats a double to have two decimal points
 Format.java
 Test22
 format(double d)

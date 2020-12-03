@@ -1,7 +1,7 @@
 16
-Test inputs a double and checks if the given double is the same as the minimum if it is considered inside the range.
+Checks if the float provided is inside the provided range
 DoubleRange.java
 Test16
 contains(double d)
-10.0
+10.0 90.9 10.0
 true

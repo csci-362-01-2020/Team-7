@@ -1,5 +1,5 @@
 14
-Test inputs two allergens and sees if they’re the same
+Compares the allergens of two allergies
 Allergy.java
 Test14
 hasSameAllergen(Allergy allergy)

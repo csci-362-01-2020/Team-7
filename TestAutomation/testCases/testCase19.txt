@@ -3,5 +3,5 @@ Test inputs a double and checks if the given double is in the range.
 DoubleRange.java
 Test19
 contains(double d)
-0.0
+10.0 90.9 0.0
 false

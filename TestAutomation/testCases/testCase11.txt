@@ -3,5 +3,5 @@ Checks if user is a super user
 User.java
 Test11
 IsSuperUser()
-["System Developer" "hey"]
+System Developer
 true

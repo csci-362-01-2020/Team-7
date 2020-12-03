@@ -1,5 +1,5 @@
 03
-Tests the method compareNaturalIgnoreCaseAscii when the value for s is equal to the value for t
+Subtracts the ASCII values of s and t
 NaturalStrings.java
 Test03
 compareNaturalIgnoreCaseAscii(String s, String t)

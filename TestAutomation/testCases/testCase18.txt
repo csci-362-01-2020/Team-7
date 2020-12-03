@@ -1,5 +1,5 @@
 18
-Tests if the method CompareNaturalAscii returns  0 if the two string arguments are equal
+Subtracts the two ASCII values of s and t
 NaturalStrings.java
 Test18
 compareNaturalAscii(String s, String t)

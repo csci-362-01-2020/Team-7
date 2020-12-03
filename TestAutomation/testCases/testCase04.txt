@@ -1,5 +1,5 @@
 04
-Tests the method compareNaturalAscii when the value for t is greater than the value for s
+Subtracts the ASCII values of s and t
 NaturalStrings.java
 Test04
 compareNaturalAscii(String s, String t)

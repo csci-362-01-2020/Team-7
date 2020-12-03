@@ -1,5 +1,5 @@
 10
-Test inputs a role and confirms the role was added
+Returns if a user has a role
 User.Java
 Test10
 hasRole(String r)
