@@ -1,9 +1,9 @@
 #!/bin/bash
 
-rm ../reports/finalReport.html
-rm ../oracles/results.txt
+rm reports/finalReport.html
+rm oracles/results.txt
 
-cd ../testCases
+cd testCases
 
 count=1
 
